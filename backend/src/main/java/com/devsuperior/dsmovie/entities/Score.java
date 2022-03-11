@@ -9,7 +9,7 @@ import javax.persistence.Table;
 public class Score {
     @EmbeddedId
     private ScorePK id = new ScorePK();
-    private Double score;
+    private Double value;
 
     public Score() {
     }
@@ -22,12 +22,12 @@ public class Score {
         this.id = id;
     }
 
-    public Double getScore() {
-        return score;
+    public Double getValue() {
+        return value;
     }
 
-    public void setScore(Double score) {
-        this.score = score;
+    public void setValue(Double value) {
+        this.value = value;
     }
 
     public void setMovie(Movie movie) {
